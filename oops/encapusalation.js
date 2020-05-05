@@ -10,5 +10,5 @@ let employee = {
   },
 };
 
-utput = employee.monthly_wage();
+output = employee.monthly_wage();
 console.log(output);
