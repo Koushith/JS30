@@ -12,4 +12,4 @@ let employee = {
 
 output = employee.monthly_wage();
 console.log(output);
-e
+
