@@ -10,6 +10,6 @@ let employee = {
   },
 };
 
-output = employee.monthly_wage();
+output = employee.monthly_wage();e
 console.log(output);
 
