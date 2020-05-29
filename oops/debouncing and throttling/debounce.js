@@ -17,9 +17,9 @@
 //   }, 2000)
 // );
 
-const debounce = function (fn, delay) {
+const debounce = (fn, delay) => {
+  let timeOutId;
   return function () {
-    let timeOutId;
     if (timeOutId) {
       clearTimeout(timeOutId);
     }
