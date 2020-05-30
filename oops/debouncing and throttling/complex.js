@@ -66,6 +66,6 @@ function greeting() {
   console.log(` hi my name is ${this.name} and i am ${this.age} years old`);
 }
 // call
-//greeting.apply(jane, ['hi', 'koushith ']);
+//greeting.apply(jane, ['hi', 'koushith']);
 x = greeting.bind(john);
 x();
