@@ -11,11 +11,22 @@
 // printName();
 // //
 
-function outerFunction(outerVar) {
-  return function innerFunvtion(innerVar) {
-    console.log(`Outer Variable : ${outerVar}`);
-    console.log(`Inner Variable : ${innerVar}`);
+// function outerFunction(outerVar) {
+//   return function innerFunvtion(innerVar) {
+//     console.log(`Outer Variable : ${outerVar}`);
+//     console.log(`Inner Variable : ${innerVar}`);
+//   };
+// }
+// const call = outerFunction('outside');
+// call('inner');
+let f;
+if (true) {
+  let i = 1;
+  f = () => {
+    console.log(i);
   };
 }
-const call = outerFunction('outside');
-call('inner');
+
+console.dir(f);
+
+f();
