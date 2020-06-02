@@ -7,4 +7,4 @@ function reverseInt(int) {
   return parseInt(reverse);
 }
 
-console.log(reverseInt(123456789));
+console.log(reverseInt(123456789))
