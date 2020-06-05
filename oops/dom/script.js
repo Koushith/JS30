@@ -36,3 +36,17 @@
 // console.log('parent node is', booklist.parentNode);
 
 // DOM EVENTS
+
+let btns = document.querySelectorAll('#book-list .delete');
+console.log(btns);
+Array.from(btns).forEach(function (btn) {
+  btn.addEventListener('click', function (e) {
+    console.log('Delete clicked');
+    // we want too delete li parent- so get the ref
+    const li = e.target.parentElement;
+    //console.log(li);
+    li.parentElement.removeChild(li);
+  });
+});
+
+// form
