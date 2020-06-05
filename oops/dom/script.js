@@ -30,7 +30,9 @@
 
 // move towards up -parent
 
-const booklist = document.querySelector('#book-list');
+// const booklist = document.querySelector('#book-list');
 
+// // console.log('parent node is', booklist.parentNode);
 // console.log('parent node is', booklist.parentNode);
-console.log('parent node is', booklist.parentNode);
+
+// DOM EVENTS
