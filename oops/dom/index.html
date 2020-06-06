@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <title>JavaScript DOM Tutorials</title>
   </head>
   <body>
     <div id="wrapper">
       <header>
         <div id="page-banner">
-          <h1 class="title">Book</h1>
-          <p>Book For Ninja's</p>
-          <a href="koushith">click here</a>
-          <form action="" id="search-books">
-            <input type="text" placeholder="Search books...." />
+          <h1 class="title">Bookorama</h1>
+          <p>Books for Ninjas</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
           </form>
         </div>
       </header>
@@ -39,7 +37,9 @@
           </li>
         </ul>
       </div>
-      <form action="" id="add-book">
+      <form id="add-book">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all books</label>
         <input type="text" placeholder="Add a book..." />
         <button>Add</button>
       </form>

@@ -4,6 +4,7 @@ const forms = document.forms;
 // delete books
 list.addEventListener('click', (e) => {
   if (e.target.className == 'delete') {
+    console.log('delete pressed');
     const li = e.target.parentElement;
     li.parentNode.removeChild(li);
   }
