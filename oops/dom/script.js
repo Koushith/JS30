@@ -52,6 +52,8 @@ Array.from(btns).forEach(function (btn) {
 // form
 // Add books
 const list = document.querySelector('#book-list ul');
+// ref to list spnab class to add styling later.
+const book = document.querySelector('li:last-child');
 const addForm = document.forms['add-book'];
 addForm.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -61,6 +63,7 @@ addForm.addEventListener('submit', function (e) {
 
   //  create elements acc to tags inside book ul
   const li = document.createElement('li');
+
   const bookName = document.createElement('span');
   const deleteBtn = document.createElement('span');
 
@@ -74,4 +77,8 @@ addForm.addEventListener('submit', function (e) {
   li.appendChild(deleteBtn);
   // append to ul
   list.appendChild(li);
+
+  // add class for styling
+  book.classList.add('name');
+  book.classList.add('delete');
 });
